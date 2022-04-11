@@ -1,13 +1,11 @@
-import axios from 'axios';
+import Events from './components/Events';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello</h1>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <header className="App-header">
+      <Events />
+    </header>
+  </div>
+);
 
 export default App;
