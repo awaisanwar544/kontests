@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://awaisanwar544.github.io/kontests/)
+[Live Demo Link](https://6255d9afdf4f28161893efa5--mellow-concha-b54076.netlify.app/)
 ## Requisites
 node v16.13
 npm v8.3
@@ -23,7 +23,7 @@ npm v8.3
 
 Clone the repository: 
 
-`git clone https://github.com/awaisanwar544.spacex-project.git`
+`git clone https://github.com/awaisanwar544.kontests.git`
 
 `cd kontests`
 
@@ -84,9 +84,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 ## 📝 License
 
