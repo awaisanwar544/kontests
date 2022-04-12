@@ -12,6 +12,7 @@ const FETCH_EVENTS = 'FETCH EVENTS';
 export const getEvents = () => async (dispatch) => {
   const response = await axios.get(URL)
     .then((res) => res.data.map((item) => item));
+  dict['All Events'] = response;
   response.forEach((el) => {
     if (el.site in dict) {
       dict[el.site].push(el);
