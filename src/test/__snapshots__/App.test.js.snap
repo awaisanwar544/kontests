@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Components Render Correctly EventCat renders correctly 1`] = `null`;
+
+exports[`App Components Render Correctly Events renders correctly 1`] = `null`;
+
+exports[`App Components Render Correctly EventsList renders correctly 1`] = `null`;
+
+exports[`App Components Render Correctly Header renders correctly 1`] = `
+<header
+  className="sc-hKMtZM jFqUXH"
+>
+  <div>
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+    >
+      &lt; Home
+    </a>
+  </div>
+  <div>
+    <h1>
+      Online Tech Events
+    </h1>
+  </div>
+  <div />
+</header>
+`;

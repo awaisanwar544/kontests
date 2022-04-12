@@ -2,13 +2,14 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { getEvents } from '../redux/events';
+import { getEvents } from '../redux/eventsReducer';
 import EventCat from './EventCat';
 
 const MainWrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
   h2 {
     color: #ffffff;
     font-size: 2em;

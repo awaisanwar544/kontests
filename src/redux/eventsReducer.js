@@ -6,7 +6,7 @@ const initialState = {};
 const URL = 'https://kontests.net/api/v1/all';
 
 // Actions
-const FETCH_EVENTS = 'FETCH EVENTS';
+const FETCH_EVENTS = 'FETCH_EVENTS';
 
 // Action Creators
 export const getEvents = () => async (dispatch) => {
@@ -30,7 +30,7 @@ export const getEvents = () => async (dispatch) => {
 // Reducer
 const eventsReducer = (state = initialState, action = {}) => {
   if (action.type === FETCH_EVENTS) {
-    return { ...dict };
+    return { ...action.payload };
   }
 
   return state;
