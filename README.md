@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://awaisanwar544.github.io/kontests/)
+[Live Demo Link](https://6255d9afdf4f28161893efa5--mellow-concha-b54076.netlify.app/)
 ## Requisites
 node v16.13
 npm v8.3
