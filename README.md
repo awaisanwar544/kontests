@@ -23,7 +23,7 @@ npm v8.3
 
 Clone the repository: 
 
-`git clone https://github.com/awaisanwar544.spacex-project.git`
+`git clone https://github.com/awaisanwar544.kontests.git`
 
 `cd kontests`
 
