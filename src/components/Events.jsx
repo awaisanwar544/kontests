@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
@@ -17,6 +17,11 @@ const MainWrapper = styled.div`
   a {
     text-decoration: none;
   }
+  input {
+    margin: 1em;
+    padding: 1em;
+    font-size: 2em;
+  }
 `;
 
 const ListWrapper = styled.div`
@@ -29,7 +34,11 @@ const ListWrapper = styled.div`
 const Events = () => {
   const events = useSelector((state) => state.events);
   const dispatch = useDispatch();
+  const [filter, setFilter] = useState();
   const list = Object.keys(events).filter((el) => el !== 'All Events');
+  const filterHandler = (event) => {
+    setFilter(event.target.value);
+  };
   useEffect(() => {
     if (list.length === 0) {
       dispatch(getEvents());
@@ -41,9 +50,17 @@ const Events = () => {
         <NavLink to="AllEvents"><EventCat category="All Events" /></NavLink>
       )}
       <h2>List by Sites</h2>
+      <input
+        type="text"
+        placeholder="Search Here"
+        onChange={filterHandler}
+      />
       <ListWrapper>
-        {list.length > 0 && (
+        {!filter && list.length > 0 && (
           list.map((item) => <NavLink key={item} to={item.replace(/\s/g, '')}><EventCat category={item} /></NavLink>)
+        )}
+        {filter && list.length > 0 && (
+          list.filter((item) => (item.toLowerCase().includes(filter))).map((item) => <NavLink key={item} to={item.replace(/\s/g, '')}><EventCat category={item} /></NavLink>)
         )}
       </ListWrapper>
     </MainWrapper>

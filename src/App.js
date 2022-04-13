@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import Events from './components/Events';
 import EventsList from './components/EventsList';
-import Header from './components/Header';
+import Header from './container/Header';
 
 const App = () => {
   const events = useSelector((state) => state.events);
