@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import store from '../redux/configureStore';
 import Events from '../components/Events';
-import Header from '../components/Header';
+import Header from '../container/Header';
 import EventCat from '../components/EventCat';
 import EventsList from '../components/EventsList';
 
