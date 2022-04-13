@@ -15,6 +15,7 @@
 ## Live Demo
 
 [Live Demo Link](https://mellow-concha-b54076.netlify.app)
+
 ## Requisites
 node v16.13
 npm v8.3
@@ -88,4 +89,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
