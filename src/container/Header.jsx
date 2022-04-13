@@ -8,12 +8,12 @@ const Wrapper = styled.header`
   align-items: center;
 
   h1 {
-    font-size: 3em;
+    font-size: 1em;
     color: #ffffffd0;
   }
 
   a {
-    font-size: 3em;
+    font-size: 1em;
     color: #ffffffd0;
     text-decoration: none;
   }

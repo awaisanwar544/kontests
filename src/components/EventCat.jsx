@@ -9,12 +9,12 @@ const Wrapper = styled.div`
   justify-content: center;
   align-content: center;
   align-items: center;
-  padding: 2em;
+  padding: 1em;
   background-color: #fd5294;
   text-align: center;
 
   h2 {
-    font-size: 3em !important;
+    font-size: 3dem !important;
     font-weight: 900;
     color: #ffffffd0;
   }

@@ -8,11 +8,10 @@ import EventCat from './EventCat';
 const MainWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 
   h2 {
     color: #ffffff;
-    font-size: 2em;
+    font-size: 1.5em;
   }
   a {
     text-decoration: none;
@@ -20,13 +19,14 @@ const MainWrapper = styled.div`
   input {
     margin: 1em;
     padding: 1em;
-    font-size: 2em;
+    font-size: 1em;
   }
 `;
 
 const ListWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  grid-template-columns: auto auto;
   column-gap: 0.5em;
   row-gap: 0.5em;
 `;
@@ -60,7 +60,7 @@ const Events = () => {
           list.map((item) => <NavLink key={item} to={item.replace(/\s/g, '')}><EventCat category={item} /></NavLink>)
         )}
         {filter && list.length > 0 && (
-          list.filter((item) => (item.toLowerCase().includes(filter))).map((item) => <NavLink key={item} to={item.replace(/\s/g, '')}><EventCat category={item} /></NavLink>)
+          list.filter((item) => (item.toLowerCase().includes(filter.toLowerCase()))).map((item) => <NavLink key={item} to={item.replace(/\s/g, '')}><EventCat category={item} /></NavLink>)
         )}
       </ListWrapper>
     </MainWrapper>
